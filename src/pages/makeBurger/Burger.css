@@ -1,0 +1,42 @@
+/* @media screen and (min-width:375px) and  (max-width:450px){
+	.burgerTop{
+		width:200px;
+		height: 175px;
+		border-top-left-radius: 1000px;
+		border-top-right-radius: 1000px;
+	
+	}
+	.burgerBottom{
+		width:200px;
+		height: 125px;
+		border-bottom-left-radius: 1000px;
+		border-bottom-right-radius: 1000px;
+	
+	}
+	
+	.burgerItems{
+	    width:200px;
+	 } 
+ }
+ */
+
+ @media screen and (min-width: 375px) and (max-width: 667px) {
+	.burgerTop {
+	  width: 60%;
+	  height: 120px;
+	  border-top-left-radius: 1000px;
+	  border-top-right-radius: 1000px;
+	}
+  
+	.burgerBottom {
+	  width: 60%;
+	  height: 70px;
+	  border-bottom-left-radius: 1000px;
+	  border-bottom-right-radius: 1000px;
+	}
+  
+	.burgerItems {
+	  width: 100%;
+	}
+  }
+  

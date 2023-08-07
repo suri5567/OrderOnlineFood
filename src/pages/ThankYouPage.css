@@ -1,0 +1,35 @@
+
+html{
+	scroll-behavior: smooth;
+}
+.thank-you-box {
+	background-color: #f8f9fa;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thank-you-box h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  .thank-you-box p {
+	font-size: 18px;
+	color: #6c757d;
+  }
+
+  .gif-container {
+	text-align: center;
+	margin-top: 20px;
+  }
+  
+  .gif-container img {
+	max-width: 100%; 
+	height: auto; 
+  }
+  
+  
