@@ -31,7 +31,7 @@ const Cart = () => {
                 <h5 className="text-center">Your cart is empty</h5>
               ) : (
                 <table className="table table-bordered">
-                  <thead>
+                  <thead style={{textAlign:"center"}}>
                     <tr>
                       <th>Image</th>
                       <th>Product Title</th>
@@ -94,3 +94,4 @@ const Tr = (props) => {
 };
 
 export default Cart;
+

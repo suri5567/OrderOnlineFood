@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 import IngredientControl from './IngredientControl';
 import './Burger.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SingleBurgerPrice from './SingleBurgerPrice'
 
 const Burger = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [filteredColor, setColorData] = useState([]);
+  const [itemPrice, setItemPrice] = useState(0);
 
   const addIngredient = (ingredient) => {
     const colorObject = {
@@ -17,6 +19,7 @@ const Burger = () => {
     setColorData((prevColorData) => [...prevColorData, colorObject]);
 
     setFilteredData((prevFilteredData) => [...prevFilteredData, ingredient]);
+	setItemPrice(itemPrice+10);
   };
 
   const removeIngredientData = (ingredient) => {
@@ -24,13 +27,15 @@ const Burger = () => {
     setFilteredData(updatedData);
 
     setColorData((prevColorData) => prevColorData.filter((item) => item.ingredient !== ingredient));
+	setItemPrice(itemPrice==0?0:itemPrice-10);
   };
 
   return (
     <div className="container">
-      <div className="row" style={{marginTop:"100px"}}>
+      <div className="row" style={{marginTop:"70px"}}>
         <div className="col-md-6">
           <div className="mainContainer bg-light p-4 rounded border" style={{ width: '80%', height: '95%', marginLeft: '50px', marginBottom: '20px' }}>
+			<SingleBurgerPrice items={itemPrice} />
             <div style={{ textAlign: 'center', color: '#008080' }}>
               <h3>Ingredients</h3>
             </div>
